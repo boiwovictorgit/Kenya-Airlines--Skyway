@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Airways — The Pride of Africa</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="kq-navbar">
+        <div class="nav-container">
+            <div class="brand-logo">
+                <span class="red-badge">K</span> Kenya Airways
+                <small class="tagline">The Pride of Africa</small>
+            </div>
+            <div id="stats-dashboard" class="stats-container"></div>
+        </div>
+    </nav>
+
+    <header class="hero-showcase">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="promo-badge">UP TO 50% OFF ON RETURN FARES</span>
+
+            <h2>Experience our Boeing 777</h2>
+
+            <p class="hero-route">
+                Nairobi ⇄ International, July 2026
+            </p>
+
+            <div class="booking-widget">
+                <div class="widget-row">
+
+                    <div class="input-group">
+                        <label>✈ Where from?</label>
+                        <input
+                            type="text"
+                            value="Nairobi (JKIA)"
+                            readonly
+                            class="disabled-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>📍 Where to?</label>
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Search destination (e.g. Mombasa)">
+                    </div>
+
+                    <div class="input-group">
+                        <label>💺 Class</label>
+                        <select id="filter-class">
+                            <option value="all">All Classes</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Business">Business</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="animation-container">
+        <div class="ticker-text">
+            Flight Operations Live Database Feed — Tracking Active Kenyan Routes
+        </div>
+    </div>
+
+    <main class="content-wrapper">
+
+        <section class="flights-section">
+            <h2 class="section-title">Available Domestic Flights</h2>
+            <div id="flights-container" class="grid-container"></div>
+        </section>
+
+        <section class="booking-section">
+            <h2 class="section-title">Your Booking History</h2>
+            <ul id="booking-history-list"></ul>
+        </section>
+
+        <h2 class="section-title">Plan Your Trip</h2>
+
+        <section class="plan-matrix">
+
+            <div class="plan-card">
+                <img
+                    src="https://umbatosafaris.com/wp-content/uploads/2024/05/jkia-overview.webp"
+                    alt="Discover Destination Maps">
+
+                <div class="plan-caption">
+                    Discover Where We Fly
+                </div>
+            </div>
+
+            <div class="plan-column">
+
+                <div class="plan-card">
+                    <img
+                        src="https://assets.citizen.digital/27941/JKIA.PNG"
+                        alt="Special Care Services">
+
+                    <div class="plan-caption">
+                        Special Care
+                    </div>
+                </div>
+
+                <div class="plan-card">
+                    <img
+                        src="https://umbatosafaris.com/wp-content/uploads/2024/05/1A-new.webp"
+                        alt="Baggage Information">
+
+                    <div class="plan-caption">
+                        Baggage Information
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="offers-section">
+
+            <div class="crew-frame">
+                <img
+                    src="https://media.licdn.com/dms/image/v2/D4D03AQHebaeJm8Vpww/profile-displayphoto-scale_400_400/B4DZ8H.q1DI0Ag-/0/1782545299668?e=1784764800&v=beta&t=wMtpOwlfcW_hAQC2XxVb6puKCadCX-pXzabCf4BIlXg"
+                    alt="Kenya Airways Crew">
+            </div>
+
+            <div class="form-frame">
+
+                <h3>Get the Latest Offers</h3>
+
+                <p>
+                    Subscribe and be the first to receive news and premium
+                    corporate travel tier updates directly from Kenya Airways.
+                </p>
+
+                <div class="sub-input-row">
+                    <input
+                        type="email"
+                        placeholder="Enter your email address">
+
+                    <button>Subscribe</button>
+                </div>
+
+                <label class="check-label">
+                    <input type="checkbox">
+                    I would like to receive news and travel destination offers
+                    from Kenya Airways.
+                </label>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="kq-corporate-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h4>Kenya Airways</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Awards</li>
+                    <li>Careers</li>
+                    <li>Our Partners</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>KQ Group Brands</h4>
+                <ul>
+                    <li>KQ Holidays</li>
+                    <li>KQ Cargo</li>
+                    <li>KQ Pride Centre</li>
+                    <li>Fahari Aviation</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Our Destinations</h4>
+                <ul>
+                    <li>Route Map</li>
+                    <li>Africa</li>
+                    <li>Asia</li>
+                    <li>America</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Help & Contact</h4>
+                <ul>
+                    <li>Feedback/Complaint</li>
+                    <li>Contact Us</li>
+                    <li>Name Change Rules</li>
+                    <li>Travel Requirements</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

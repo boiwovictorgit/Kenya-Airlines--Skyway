@@ -1,0 +1,617 @@
+
+:root {
+    --kq-red: #8a1022;         
+    --kq-navy: #8c5fbe;        
+    --kq-slate: #64cf32;       
+    --light-bg: #2366ca;       
+    --card-shadow: 0 10px 25px rgba(228, 234, 245, 0.06);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--kq-navy);
+}
+
+
+.kq-navbar {
+    background: #cec8c8;
+    border-bottom: 1px solid #e4dce1;
+    padding: 18px 6%;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--kq-navy);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.red-badge {
+    background: var(--kq-red);
+    color: #dad9d9;
+    padding: 4px 14px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+
+.hero-showcase {
+    position: relative;
+    
+    background-image: url('https://cdn.discoverafrica.com/wp-content/uploads/2023/08/31153856/adobestock_329639243_editorial_use_only-scaled.webp');
+    background-size: cover;
+    background-repeat: var(--kq-navy);
+    background-position: center 35%;
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 6%;
+    box-sizing: border-box;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(5, 20, 51, 0.75) 0%, rgba(5, 20, 51, 0.45) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.promo-badge {
+    background: var(--kq-red);
+    color: #ffffff;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.6rem;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.hero-route {
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    margin: 0 0 30px 0;
+}
+
+
+.booking-widget {
+    background: rgba(5, 20, 51, 0.93);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid var(--kq-red);
+}
+
+.widget-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.input-group input, .input-group select {
+    padding: 14px;
+    background: var(--kq-slate);
+    border: 1px solid #243557;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+
+.animation-container {
+    background: #ffffff;
+    padding: 15px 6%;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.ticker-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--kq-navy);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticker-text::before {
+    content: "✈";
+    color: var(--kq-red);
+    font-size: 1.2rem;
+}
+
+.content-wrapper {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 0 6%;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 35px;
+    border-left: 5px solid var(--kq-red);
+    padding-left: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 35px;
+    margin-bottom: 60px;
+}
+
+:root {
+    --kq-red: #e31937;         /* Official brand red accents */
+    --kq-navy: #051433;        /* Main dark brand corporate color */
+    --kq-slate: #111e38;       /* Transparent and dark input bases */
+    --light-bg: #f8fafc;       /* Crisp background */
+    --border-color: #e2e8f0;   /* Light card framing line */
+    --card-shadow: 0 4px 20px rgba(5, 20, 51, 0.05);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--kq-navy);
+    overflow-x: hidden;
+}
+
+/* --- Brand Header Navigation --- */
+.kq-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 6%;
+}
+
+.nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--kq-navy);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.red-badge {
+    background: var(--kq-red);
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 15px;
+    background: #f1f5f9;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* --- Premium Crisp Hero Section --- */
+.hero-showcase {
+    position: relative;
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2389659475/display_1500/stock-photo-lonon-heathrow-june-kenya-airways-boeing-dreamliner-straight-after-take-off-2389659475.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 6%;
+    box-sizing: border-box;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(5, 20, 51, 0.75) 0%, rgba(5, 20, 51, 0.45) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.promo-badge {
+    background: var(--kq-red);
+    color: #ffffff;
+    padding: 5px 12px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 3.2rem;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    font-weight: 800;
+}
+
+.hero-route {
+    font-size: 1.4rem;
+    color: #e2e8f0;
+    margin: 0 0 25px 0;
+}
+
+/* --- Integrated Translucent Search Widget --- */
+.booking-widget {
+    background: rgba(5, 20, 51, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    border-bottom: 4px solid var(--kq-red);
+}
+
+.widget-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.input-group input, .input-group select {
+    padding: 12px;
+    background: var(--kq-slate);
+    border: 1px solid #243557;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.disabled-input {
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+/* --- Live Feed Banner Line --- */
+.animation-container {
+    background: #ffffff;
+    padding: 14px 6%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ticker-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--kq-navy);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ticker-text::before {
+    content: "✈";
+    color: var(--kq-red);
+}
+
+/* --- Framework Layout Canvas --- */
+.content-wrapper {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 6%;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 40px 0 25px 0;
+    position: relative;
+    padding-left: 12px;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 4px; bottom: 4px;
+    width: 4px;
+    background: var(--kq-red);
+}
+
+/* --- Dynamic Available Flights Cards --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px;
+}
+
+.flight-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+/* ==========================================================================
+   NEW ADDITIONS: "Plan Your Trip", "Offers Banner" & "Footer Links"
+   ========================================================================== */
+
+/* --- Plan Your Trip Showcase Matrix --- */
+.plan-matrix {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.plan-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.plan-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 200px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.plan-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.plan-card:hover img {
+    transform: scale(1.03);
+}
+
+.plan-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(5, 20, 51, 0.9));
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* --- Interactive Offers Subscription Section --- */
+.offers-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 0 40px;
+    margin: 60px 0;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.crew-frame {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.crew-frame img {
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    display: block;
+}
+
+.form-frame {
+    flex: 1.2;
+    padding: 40px 0;
+}
+
+.form-frame h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: var(--kq-navy);
+}
+
+.form-frame p {
+    color: #64748b;
+    margin: 0 0 25px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.sub-input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.sub-input-row input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.sub-input-row input:focus {
+    border-color: var(--kq-navy);
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #475569;
+    cursor: pointer;
+}
+
+/* --- Universal Buttons and Interactive Elements --- */
+button {
+    background: var(--kq-navy);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background: var(--kq-red);
+}
+
+/* --- Active Bookings Entries List --- */
+ul { list-style: none; padding: 0; margin: 0; }
+
+li {
+    background: #ffffff;
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+}
+
+/* --- Deep Navy Corporate Footer --- */
+.kq-corporate-footer {
+    background: #0b0f19;
+    color: #94a3b8;
+    padding: 60px 6% 40px 6%;
+    border-top: 4px solid var(--kq-red);
+}
+
+.footer-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.5px;
+}
+
+.footer-col ul li {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    cursor: pointer;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li:hover {
+    color: #ffffff;
+}
+
+/* --- Responsive Adaptations --- */
+@media (max-width: 968px) {
+    .plan-matrix { grid-template-columns: 1fr; }
+    .offers-section { flex-direction: column; padding: 40px; }
+    .crew-frame { display: none; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .widget-row { flex-direction: column; }
+}

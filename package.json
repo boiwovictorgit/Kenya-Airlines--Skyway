@@ -1,0 +1,14 @@
+{
+  "name": "skyway",
+  "version": "1.0.0",
+  "description": "A modern airline booking web application built using HTML, CSS and JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "start": "json-server --watch db.json --host 0.0.0.0 --port $PORT",
+    "dev": "json-server --watch db.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "flights": [
+    {
+      "id": "1",
+      "flightNumber": "KQ-100",
+      "destination": "Nairobi (JKIA)",
+      "price": 120,
+      "seats": 14,
+      "class": "Economy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7kBRein_FFXz3BhL2xPb3SG6dQhXPKHQU5URzsEEhtq5XJPnzWtpqR7Z&s=10"
+    },
+    {
+      "id": "2",
+      "flightNumber": "KQ-204",
+      "destination": "Mombasa (Moi Int.)",
+      "price": 150,
+      "seats": 8,
+      "class": "Business",
+      "image": "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=500&q=80"
+    },
+    {
+      "id": "3",
+      "flightNumber": "JM-852",
+      "destination": "Kisumu International",
+      "price": 95,
+      "seats": 4,
+      "class": "Economy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7swG0REH9mUPXwdyl1yH1rfyrNQwaJ6k7P2YDTrDvrkAWGROEcQBjz_Qb&s=10"
+    },
+    {
+      "id": "4",
+      "flightNumber": "GL-401",
+      "destination": "Eldoret International",
+      "price": 110,
+      "seats": 8,
+      "class": "Economy",
+      "image": "https://images.unsplash.com/photo-1483450388369-9ed95738483c?w=500&q=80"
+    },
+    {
+      "id": "5",
+      "flightNumber": "9W-302",
+      "destination": "Malindi Airport",
+      "price": 135,
+      "seats": 6,
+      "class": "Economy",
+      "image": "https://cdn.standardmedia.co.ke/images/sunday/rktup3denafezc2s5e11eb0431bfb.jpg"
+    },
+    {
+      "id": "6",
+      "flightNumber": "SF-112",
+      "destination": "Diani (Ukunda Air)",
+      "price": 180,
+      "seats": 4,
+      "class": "Business",
+      "image": "https://c8.alamy.com/comp/JTDB77/passengers-alight-from-a-jambojet-bombardier-q400-aircraft-from-nairobi-JTDB77.jpg"
+    },
+    {
+      "id": "7",
+      "flightNumber": "KQ-044",
+      "destination": "Nairobi (Wilson Air)",
+      "price": 85,
+      "seats": 19,
+      "class": "Economy",
+      "image": "https://jieshun-web-en-guigu.oss-us-west-1.aliyuncs.com/uploadfiles%2Fc5mHwppDP7.png?V2lsc29uIEFpcnBvcnQucG5n"
+    },
+    {
+      "id": "8",
+      "flightNumber": "JM-701",
+      "destination": "Lamu (Manda Airport)",
+      "price": 165,
+      "seats": 2,
+      "class": "Business",
+      "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500&q=80"
+    },
+     {
+      "id": "8",
+      "flightNumber": "JM-701",
+      "destination": "Lamu (Manda Airport)",
+      "price": 165,
+      "seats": 2,
+      "class": "Business",
+      "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500&q=80"
+    },
+    {
+      "flightNumber": "GL-23",
+      "destination": "Wajir International",
+      "price": 234,
+      "seats": 200,
+      "class": "business",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/024/493/416/small/plane-on-a-runway-with-sky-in-the-background-ai-generated-free-photo.jpg",
+      "id": "LXWPqnQ"
+    }
+  ],
+  "bookings": [
+    {
+      "flightId": "3",
+      "flightNumber": "JM-852",
+      "destination": "Kisumu International",
+      "price": 95,
+      "id": 3
+    }
+  ]
+}
