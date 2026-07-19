@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://kenya-airlines-skyway.onrender.com";
 
 let flights = [];
 let bookings = [];
