@@ -63,10 +63,12 @@
                 <div class="widget-row">
 
                     <div class="input-group">
-                        <label>✈ Where from?</label>
+                        <label> Where from?</label>
                         <input
                             type="text"
                             value="Nairobi (JKIA)"
+                            
+
                             readonly
                             class="disabled-input">
                     </div>
@@ -85,6 +87,7 @@
                             <option value="all">All Classes</option>
                             <option value="Economy">Economy</option>
                             <option value="Business">Business</option>
+                            <option value="First">tourri</option>
                         </select>
                     </div>
 
@@ -95,7 +98,7 @@
 
     <div class="animation-container">
         <div class="ticker-text">
-            Flight Operations Live Database Feed — Tracking Active Kenyan Routes
+            Flight Operations Live  — Tracking Active Kenyan Routes
         </div>
     </div>
 
@@ -168,13 +171,22 @@
                     corporate travel tier updates directly from Kenya Airways.
                 </p>
 
-                <div class="sub-input-row">
-                    <input
-                        type="email"
-                        placeholder="Enter your email address">
+      <div class="sub-input-row">
+    <input
+        type="email"
+        id="subscriberEmail"
+        placeholder="Enter your email address">
 
-                    <button>Subscribe</button>
-                </div>
+    <button type="button" onclick="openSubscribeModal()">
+        Subscribe
+    </button>
+</div>
+                    
+                    
+                        
+
+                    
+                
 
                 <label class="check-label">
                     <input type="checkbox">
@@ -188,53 +200,154 @@
 
     </main>
 
-    <footer class="kq-corporate-footer">
+  <footer class="kq-corporate-footer">
 
-        <div class="footer-grid">
+    <div class="footer-grid">
 
-            <div class="footer-col">
-                <h4>Kenya Airways</h4>
-                <ul>
-                    <li>About Us</li>
-                    <li>Awards</li>
-                    <li>Careers</li>
-                    <li>Our Partners</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>KQ Group Brands</h4>
-                <ul>
-                    <li>KQ Holidays</li>
-                    <li>KQ Cargo</li>
-                    <li>KQ Pride Centre</li>
-                    <li>Fahari Aviation</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Our Destinations</h4>
-                <ul>
-                    <li>Route Map</li>
-                    <li>Africa</li>
-                    <li>Asia</li>
-                    <li>America</li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Help & Contact</h4>
-                <ul>
-                    <li>Feedback/Complaint</li>
-                    <li>Contact Us</li>
-                    <li>Name Change Rules</li>
-                    <li>Travel Requirements</li>
-                </ul>
-            </div>
-
+        <div class="footer-col">
+            <h4>Kenya Airways</h4>
+            <ul>
+                <li><a href="#" class="footer-link" data-page="about">About Us</a></li>
+                <li><a href="#" class="footer-link" data-page="awards">Awards</a></li>
+                <li><a href="#" class="footer-link" data-page="careers">Careers</a></li>
+                <li><a href="#" class="footer-link" data-page="partners">Our Partners</a></li>
+            </ul>
         </div>
 
-    </footer>
+        <div class="footer-col">
+            <h4>KQ Group Brands</h4>
+            <ul>
+                <li><a href="#" class="footer-link" data-page="holidays">KQ Holidays</a></li>
+                <li><a href="#" class="footer-link" data-page="cargo">KQ Cargo</a></li>
+                <li><a href="#" class="footer-link" data-page="pride">KQ Pride Centre</a></li>
+                <li><a href="#" class="footer-link" data-page="fahari">Fahari Aviation</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Our Destinations</h4>
+            <ul>
+                <li><a href="#" class="footer-link" data-page="map">Route Map</a></li>
+                <li><a href="#" class="footer-link" data-page="africa">Africa</a></li>
+                <li><a href="#" class="footer-link" data-page="asia">Asia</a></li>
+                <li><a href="#" class="footer-link" data-page="america">America</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Help & Contact</h4>
+            <ul>
+                <li><a href="#" class="footer-link" data-page="feedback">Feedback / Complaint</a></li>
+                <li><a href="#" class="footer-link" data-page="contact">Contact Us</a></li>
+                <li><a href="#" class="footer-link" data-page="rules">Name Change Rules</a></li>
+                <li><a href="#" class="footer-link" data-page="requirements">Travel Requirements</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Kenya Airways. The Pride of Africa.</p>
+    </div>
+
+</footer>
+
+<!-- Footer Popup -->
+<div id="footerPopup" class="popup">
+    <div class="popup-content">
+
+        <span id="closePopup">&times;</span>
+
+        <h2 id="popupTitle"></h2>
+
+        <div id="popupBody"></div>
+
+    </div>
+</div>
+
+    ...
+</footer>
+
+<!-- Footer Popup -->
+<div id="footerPopup" class="popup">
+    ...
+</div>
+
+<!-- Subscribe Popup -->
+<div id="subscribeModal" class="subscribe-modal">
+
+    <div class="subscribe-content">
+
+        <span class="close-subscribe" onclick="closeSubscribeModal()">
+            &times;
+        </span>
+
+        <h2>Get the Latest Offers</h2>
+
+        <p>
+            Complete your details below to receive exclusive Kenya Airways
+            promotions, travel news and destination offers.
+        </p>
+
+        <form id="subscribeForm">
+
+            <select required>
+                <option value="">Salutation</option>
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Miss</option>
+                <option>Dr.</option>
+            </select>
+
+            <input type="text" placeholder="First Name" required>
+
+            <input type="text" placeholder="Last Name" required>
+
+            <input type="date" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="+254 7XX XXX XXX" required>
+
+            <select required>
+                <option value="">Country of Residence</option>
+                <option>Kenya</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+                <option>Rwanda</option>
+                <option>South Africa</option>
+            </select>
+
+            <input
+                type="text"
+                placeholder="Preferred Destination">
+
+            <input
+                type="text"
+                placeholder="Asante Rewards Number (Optional)">
+
+            <label class="subscribe-check">
+
+                <input type="checkbox">
+
+                I would like to receive travel offers and newsletters from
+                Kenya Airways.
+
+            </label>
+
+            <button type="submit" class="save-btn">
+
+                Save Details
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
 
     <script src="script.js"></script>
 

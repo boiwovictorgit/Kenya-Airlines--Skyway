@@ -9,9 +9,9 @@ const bookingHistoryList = document.getElementById("booking-history-list");
 const searchInput = document.getElementById("search-input");
 const filterClass = document.getElementById("filter-class");
 
-// ======================
+
 // Initialize App
-// ======================
+
 
 async function initApp() {
 
@@ -219,9 +219,9 @@ async function confirmBooking() {
 
 }
 
-// ======================
+
 // Render Booking History
-// ======================
+
 
 function renderBookings() {
 
@@ -259,9 +259,9 @@ function renderBookings() {
 
 }
 
-// ======================
+
 // Search Flights
-// ======================
+
 
 searchInput.addEventListener("input", filterFlights);
 
@@ -304,3 +304,154 @@ function filterFlights(){
 // ======================
 
 document.addEventListener("DOMContentLoaded", initApp);
+// ======================
+// Footer Popup
+// ======================
+
+const footerInfo = {
+
+about: `
+<h3>About Kenya Airways</h3>
+
+<p>
+Kenya Airways, the flag carrier of Kenya, plays a crucial role in the country's
+socio-economic landscape. Headquartered in Nairobi, the airline is not only a
+leading aviation company but also a significant contributor to Kenya's national
+development and global connectivity.
+</p>
+
+<p>
+Kenya, like many countries across Africa, continues to face challenges related
+to poverty and economic inequality. Approximately <strong>36.1%</strong> of Kenya's
+population lives below the poverty line. Kenya Airways contributes to economic
+growth by creating jobs, supporting tourism, facilitating trade, and connecting
+Kenya to the rest of the world.
+</p>
+
+<p>
+The airline connects diverse regions, promotes economic integration, and
+supports sustainable development by improving access to international markets
+and business opportunities.
+</p>
+
+<p>
+Despite these achievements, Kenya Airways continues to operate in an environment
+marked by unequal infrastructure development, varying education levels, income
+disparities, and unequal access to air transport across Africa.
+</p>
+
+<p>
+As <strong>The Pride of Africa</strong>, Kenya Airways remains committed to safe,
+reliable, and world-class aviation services while supporting the economic
+prosperity of Kenya and the African continent.
+</p>
+`,
+
+awards:`<h3>Awards</h3><p>Kenya Airways has received several international awards for excellence in aviation, customer service, safety, and operational performance.</p>`,
+
+careers:`<h3>Careers</h3><p>Explore career opportunities for pilots, cabin crew, engineers, IT professionals, finance teams, and customer service staff.</p>`,
+
+partners:`<h3>Our Partners</h3><p>Kenya Airways partners with SkyTeam and leading global airlines to connect passengers to hundreds of destinations worldwide.</p>`,
+
+holidays:`<h3>KQ Holidays</h3><p>Discover holiday packages, hotels, safaris, and travel experiences with KQ Holidays.</p>`,
+
+cargo:`<h3>KQ Cargo</h3><p>Reliable cargo and freight services connecting Kenya with Africa and the rest of the world.</p>`,
+
+pride:`<h3>KQ Pride Centre</h3><p>A leading aviation training academy offering pilot, engineering, and cabin crew training.</p>`,
+
+fahari:`<h3>Fahari Aviation</h3><p>Specialists in drone technology, aerial services, and aviation innovation.</p>`,
+
+map:`<h3>Route Map</h3><p>Explore our growing network of destinations across Africa, Europe, Asia, and America.</p>`,
+
+africa:`<h3>Africa</h3><p>Serving major cities including Nairobi, Kigali, Entebbe, Johannesburg, Lagos, Accra, Lusaka, and Harare.</p>`,
+
+asia:`<h3>Asia</h3><p>Travel conveniently to destinations such as Mumbai, Bangkok, Guangzhou, and more.</p>`,
+
+america:`<h3>America</h3><p>Connect to New York and many other destinations through Kenya Airways partner airlines.</p>`,
+
+feedback:`<h3>Feedback / Complaint</h3><p>We value your feedback and continuously work to improve our customer experience.</p>`,
+
+contact:`<h3>Contact Us</h3>
+<p><strong>Email:</strong> customer.relations@kenya-airways.com</p>
+<p><strong>Phone:</strong> +254 0797179296</p>
+<p><strong>Head Office:</strong> Embakasi, Nairobi, Eldoret, Mombasa, Malindi, ETC</p>`,
+
+rules:`<h3>Name Change Rules</h3><p>Passenger names must match travel documents. Minor corrections may be permitted according to fare rules.</p>`,
+
+requirements:`<h3>Travel Requirements</h3><p>Ensure you have a valid passport, visa (where applicable), and meet all destination health and entry requirements before travel.</p>`
+
+};
+
+const popup = document.getElementById("footerPopup");
+const popupTitle = document.getElementById("popupTitle");
+const popupBody = document.getElementById("popupBody");
+const closePopup = document.getElementById("closePopup");
+
+document.querySelectorAll(".footer-link").forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const page = this.dataset.page;
+
+        popupTitle.textContent = this.textContent;
+
+        popupBody.innerHTML = footerInfo[page];
+
+        popup.style.display = "block";
+
+    });
+
+});
+
+closePopup.onclick = () => popup.style.display = "none";
+
+window.onclick = (e) => {
+
+    if(e.target === popup){
+
+        popup.style.display = "none";
+
+    }
+
+};
+// ======================
+// Subscribe Popup
+// ======================
+
+function openSubscribeModal() {
+
+    document.getElementById("subscribeModal").style.display = "flex";
+
+}
+
+function closeSubscribeModal() {
+
+    document.getElementById("subscribeModal").style.display = "none";
+
+}
+
+document.getElementById("subscribeForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("✅ Thank you for subscribing to Kenya Airways!");
+
+    this.reset();
+
+    closeSubscribeModal();
+
+});
+
+window.addEventListener("click", function(e){
+
+    const modal = document.getElementById("subscribeModal");
+
+    if(e.target === modal){
+
+        closeSubscribeModal();
+
+    }
+
+});

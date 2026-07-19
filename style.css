@@ -575,38 +575,178 @@ li {
     border-top: 4px solid var(--kq-red);
 }
 
-.footer-grid {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+/* ==========================================
+   FOOTER
+========================================== */
+
+.kq-corporate-footer{
+    background:#111827;
+    color:#fff;
+    padding:60px 8%;
+    margin-top:60px;
 }
 
-.footer-col h4 {
-    color: #ffffff;
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    letter-spacing: 0.5px;
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
 }
 
-.footer-col ul li {
-    background: transparent;
-    border: none;
-    padding: 0;
-    margin-bottom: 12px;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    cursor: pointer;
-    display: block;
-    transition: color 0.2s ease;
+.footer-col h4{
+    color:#d71920;
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:700;
 }
 
-.footer-col ul li:hover {
-    color: #ffffff;
+.footer-col ul{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
+.footer-col li{
+    margin-bottom:12px;
+}
+
+.footer-col a{
+    color:#d1d5db;
+    text-decoration:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+.footer-col a:hover{
+    color:#ffffff;
+    padding-left:8px;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:20px;
+    text-align:center;
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+/* ==========================================
+   POPUP
+========================================== */
+
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(82, 23, 221, 0.7);
+    z-index:9999;
+    animation:fadeIn .3s;
+}
+
+.popup-content{
+    width:90%;
+    max-width:700px;
+    background:#d3d6d3;
+    border-radius:12px;
+    margin:60px auto;
+    padding:30px;
+    position:relative;
+    animation:popup .3s;
+    max-height:80vh;
+    overflow-y:auto;
+}
+
+.popup-content h2{
+    color:#dd171e;
+    margin-bottom:20px;
+}
+
+.popup-content h3{
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.popup-content p{
+    color:#444;
+    line-height:1.8;
+}
+
+#closePopup{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:32px;
+    cursor:pointer;
+    color:#d71920;
+    transition:.3s;
+}
+
+#closePopup:hover{
+    transform:rotate(90deg);
+    color:#000;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.popup-content::-webkit-scrollbar{
+    width:8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb{
+    background:#c43035;
+    border-radius:20px;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes popup{
+    from{
+        transform:translateY(-40px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer-col a:hover{
+    padding-left:0;
+}
+
+.popup-content{
+    width:95%;
+    margin:30px auto;
+    padding:20px;
+}
+
+}
 /* --- Responsive Adaptations --- */
 @media (max-width: 968px) {
     .plan-matrix { grid-template-columns: 1fr; }
@@ -633,7 +773,7 @@ li {
 
 .book-btn{
     background:#c8102e;
-    color:white;
+    color:rgb(121, 93, 93);
 }
 
 .view-btn{
@@ -697,4 +837,58 @@ li {
 
 .confirm-btn:hover{
     background:#b8141b;
+}
+.subscribe-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.subscribe-content{
+    background:#fff;
+    width:650px;
+    max-width:95%;
+    padding:30px;
+    border-radius:12px;
+    max-height:90vh;
+    overflow-y:auto;
+    position:relative;
+}
+
+.close-subscribe{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.subscribe-content input,
+.subscribe-content select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.save-btn{
+    width:100%;
+    padding:14px;
+    background:#d71920;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.subscribe-check{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    margin:15px 0;
 }
