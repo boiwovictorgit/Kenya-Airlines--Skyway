@@ -11,6 +11,30 @@
     
     <link rel="stylesheet" href="style.css">
 </head>
+<div id="bookingModal" class="booking-modal">
+    <div class="booking-content">
+
+        <span class="close-btn" onclick="closeBooking()">&times;</span>
+
+        <h2>Manage Booking</h2>
+
+        <img id="bookingImage" src="" alt="Flight">
+
+        <h3 id="bookingFlight"></h3>
+
+        <p><strong>Destination:</strong> <span id="bookingDestination"></span></p>
+
+        <p><strong>Class:</strong> <span id="bookingClass"></span></p>
+
+        <p><strong>Price:</strong> $<span id="bookingPrice"></span></p>
+
+        <button class="confirm-btn" onclick="confirmBooking()">
+            Confirm Booking
+        </button>
+
+    </div>
+</div>
+
 <body>
 
     <nav class="kq-navbar">
