@@ -72,7 +72,7 @@
       "class": "Business",
       "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500&q=80"
     },
-     {
+    {
       "id": "8",
       "flightNumber": "JM-701",
       "destination": "Lamu (Manda Airport)",
@@ -98,6 +98,14 @@
       "destination": "Kisumu International",
       "price": 95,
       "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "vv",
+      "email": "boiwo.victor@student.moringaschool.com",
+      "password": "123",
+      "id": 1
     }
   ]
 }
