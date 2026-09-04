@@ -1,211 +1,33 @@
+/* =========================================================
+   KENYA AIRWAYS - MAIN STYLES
+========================================================= */
 
 :root {
-    --kq-red: #8a1022;         
-    --kq-navy: #8c5fbe;        
-    --kq-slate: #64cf32;       
-    --light-bg: #2366ca;       
-    --card-shadow: 0 10px 25px rgba(228, 234, 245, 0.06);
+    --kq-red: #e31937;
+    --kq-navy: #051433;
+    --kq-slate: #111e38;
+    --light-bg: #ebe9e2;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 4px 20px rgba(5, 20, 51, 0.12);
 }
+
+/* =========================================================
+   BODY / PAGE
+========================================================= */
 
 body {
     font-family: 'Segoe UI', system-ui, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--light-bg);
-    color: var(--kq-navy);
-}
-
-
-.kq-navbar {
-    background: #cec8c8;
-    border-bottom: 1px solid #e4dce1;
-    padding: 18px 6%;
-}
-
-.nav-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brand-logo {
-    font-size: 1.6rem;
-    font-weight: 800;
-    color: var(--kq-navy);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.red-badge {
-    background: var(--kq-red);
-    color: #dad9d9;
-    padding: 4px 14px;
-    border-radius: 4px;
-    font-weight: 900;
-}
-
-
-.hero-showcase {
-    position: relative;
-    
-    background-image: url('https://cdn.discoverafrica.com/wp-content/uploads/2023/08/31153856/adobestock_329639243_editorial_use_only-scaled.webp');
-    background-size: cover;
-    background-repeat: var(--kq-navy);
-    background-position: center 35%;
-    min-height: 540px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 6%;
-    box-sizing: border-box;
-}
-
-
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(180deg, rgba(143, 151, 135, 0.75) 0%, rgba(5, 20, 51, 0.45) 100%);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.promo-badge {
-    background: var(--kq-red);
-    color: #ffffff;
-    padding: 6px 14px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.hero-content h2 {
-    font-size: 3.6rem;
-    color: #ffffff;
-    margin: 0 0 10px 0;
-    font-weight: 800;
-    letter-spacing: -1px;
-}
-
-.hero-route {
-    font-size: 1.5rem;
-    color: #e2e8f0;
-    margin: 0 0 30px 0;
-}
-
-
-.booking-widget {
-    background: rgba(5, 20, 51, 0.93);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    border-bottom: 5px solid var(--kq-red);
-}
-
-.widget-row {
-    display: flex;
-    gap: 20px;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.input-group label {
-    font-size: 0.8rem;
-    color: #94a3b8;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-}
-
-.input-group input, .input-group select {
-    padding: 14px;
-    background: var(--kq-slate);
-    border: 1px solid #243557;
-    color: #ffffff;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-
-.animation-container {
-    background: #ffffff;
-    padding: 15px 6%;
-    border-bottom: 1px solid #e2e8f0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-}
-
-.ticker-text {
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--kq-navy);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.ticker-text::before {
-    content: "✈";
-    color: var(--kq-red);
-    font-size: 1.2rem;
-}
-
-.content-wrapper {
-    max-width: 1300px;
-    margin: 50px auto;
-    padding: 0 6%;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 35px;
-    border-left: 5px solid var(--kq-red);
-    padding-left: 15px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 35px;
-    margin-bottom: 60px;
-}
-
-:root {
-    --kq-red: #e31937;         /* Official brand red accents */
-    --kq-navy: #051433;        /* Main dark brand corporate color */
-    --kq-slate: #111e38;       /* Transparent and dark input bases */
-    --light-bg: #f8fafc;       /* Crisp background */
-    --border-color: #e2e8f0;   /* Light card framing line */
-    --card-shadow: 0 4px 20px rgba(5, 20, 51, 0.05);
-}
-
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--light-bg);
+    background-color: #eef3f0;
     color: var(--kq-navy);
     overflow-x: hidden;
 }
 
-/* --- Brand Header Navigation --- */
+/* =========================================================
+   NAVBAR
+========================================================= */
+
 .kq-navbar {
     background: #ffffff;
     border-bottom: 1px solid var(--border-color);
@@ -244,17 +66,29 @@ body {
     margin-left: 5px;
 }
 
-.stats-container {
+.nav-actions {
     display: flex;
-    gap: 15px;
-    background: #f1f5f9;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.85rem;
+    align-items: center;
+    gap: 10px;
 }
 
-/* --- Premium Crisp Hero Section --- */
+/* Travel Requirements */
+.travel-btn {
+    text-decoration: none;
+    color: var(--kq-navy);
+    font-weight: 700;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.travel-btn:hover {
+    color: var(--kq-red);
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
 .hero-showcase {
     position: relative;
     background-image: url('https://www.shutterstock.com/shutterstock/photos/2389659475/display_1500/stock-photo-lonon-heathrow-june-kenya-airways-boeing-dreamliner-straight-after-take-off-2389659475.jpg');
@@ -271,8 +105,15 @@ body {
 
 .hero-overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(180deg, rgba(5, 20, 51, 0.75) 0%, rgba(5, 20, 51, 0.45) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(5, 20, 51, 0.75) 0%,
+        rgba(5, 20, 51, 0.45) 100%
+    );
     z-index: 1;
 }
 
@@ -307,7 +148,10 @@ body {
     margin: 0 0 25px 0;
 }
 
-/* --- Integrated Translucent Search Widget --- */
+/* =========================================================
+   BOOKING WIDGET
+========================================================= */
+
 .booking-widget {
     background: rgba(5, 20, 51, 0.95);
     backdrop-filter: blur(10px);
@@ -336,7 +180,8 @@ body {
     margin-bottom: 8px;
 }
 
-.input-group input, .input-group select {
+.input-group input,
+.input-group select {
     padding: 12px;
     background: var(--kq-slate);
     border: 1px solid #243557;
@@ -350,7 +195,10 @@ body {
     cursor: not-allowed;
 }
 
-/* --- Live Feed Banner Line --- */
+/* =========================================================
+   TICKER
+========================================================= */
+
 .animation-container {
     background: #ffffff;
     padding: 14px 6%;
@@ -369,9 +217,13 @@ body {
 .ticker-text::before {
     content: "✈";
     color: var(--kq-red);
+    font-size: 1.2rem;
 }
 
-/* --- Framework Layout Canvas --- */
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
 .content-wrapper {
     max-width: 1300px;
     margin: 40px auto;
@@ -389,16 +241,22 @@ body {
 .section-title::before {
     content: "";
     position: absolute;
-    left: 0; top: 4px; bottom: 4px;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
     width: 4px;
     background: var(--kq-red);
 }
 
-/* --- Dynamic Available Flights Cards --- */
+/* =========================================================
+   FLIGHT GRID
+========================================================= */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 30px;
+    margin-bottom: 60px;
 }
 
 .flight-card {
@@ -409,11 +267,48 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-/* ==========================================================================
-   NEW ADDITIONS: "Plan Your Trip", "Offers Banner" & "Footer Links"
-   ========================================================================== */
+/* =========================================================
+   FLIGHT BUTTONS
+========================================================= */
 
-/* --- Plan Your Trip Showcase Matrix --- */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.book-btn,
+.view-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.book-btn {
+    background: #c8102e;
+    color: #ffffff;
+}
+
+.view-btn {
+    background: #0b3d91;
+    color: #ffffff;
+}
+
+.book-btn:hover {
+    background: #a50d26;
+}
+
+.view-btn:hover {
+    background: #082f6d;
+}
+
+/* =========================================================
+   PLAN YOUR TRIP
+========================================================= */
+
 .plan-matrix {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
@@ -451,15 +346,23 @@ body {
 
 .plan-caption {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    background: linear-gradient(transparent, rgba(5, 20, 51, 0.9));
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        transparent,
+        rgba(5, 20, 51, 0.9)
+    );
     padding: 20px;
     color: #ffffff;
     font-weight: 700;
     font-size: 1.1rem;
 }
 
-/* --- Interactive Offers Subscription Section --- */
+/* =========================================================
+   OFFERS SECTION
+========================================================= */
+
 .offers-section {
     background: #ffffff;
     border-radius: 12px;
@@ -535,7 +438,10 @@ body {
     cursor: pointer;
 }
 
-/* --- Universal Buttons and Interactive Elements --- */
+/* =========================================================
+   GENERAL BUTTONS
+========================================================= */
+
 button {
     background: var(--kq-navy);
     color: #ffffff;
@@ -552,8 +458,15 @@ button:hover:not(:disabled) {
     background: var(--kq-red);
 }
 
-/* --- Active Bookings Entries List --- */
-ul { list-style: none; padding: 0; margin: 0; }
+/* =========================================================
+   LISTS
+========================================================= */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 li {
     background: #ffffff;
@@ -567,328 +480,404 @@ li {
     font-size: 0.95rem;
 }
 
-/* --- Deep Navy Corporate Footer --- */
-.kq-corporate-footer {
-    background: #0b0f19;
-    color: #94a3b8;
-    padding: 60px 6% 40px 6%;
-    border-top: 4px solid var(--kq-red);
+/* =========================================================
+   TRAVEL REQUIREMENTS
+========================================================= */
+
+.travel-requirements {
+    padding: 60px 8%;
+    text-align: center;
+    background: #ffffff;
 }
 
-/* ==========================================
+.travel-requirements h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--kq-navy);
+}
+
+.travel-requirements > p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #333333;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.requirement-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.requirement-card h3 {
+    margin-bottom: 10px;
+    color: var(--kq-navy);
+}
+
+.requirement-card p {
+    color: #444444;
+    line-height: 1.6;
+}
+
+/* =========================================================
    FOOTER
-========================================== */
+========================================================= */
 
-.kq-corporate-footer{
-    background:#111827;
-    color:#fff;
-    padding:60px 8%;
-    margin-top:60px;
+.kq-corporate-footer {
+    background: #ffffff;
+    color: #222222;
+    padding: 60px 8%;
+    margin-top: 60px;
+    border-top: 5px solid var(--kq-red);
 }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:40px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
 }
 
-.footer-col h4{
-    color:#d71920;
-    margin-bottom:20px;
-    font-size:20px;
-    font-weight:700;
+.footer-col h4 {
+    color: #d71920;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.footer-col ul{
-    list-style:none;
-    padding:0;
-    margin:0;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-col li{
-    margin-bottom:12px;
+.footer-col li {
+    margin-bottom: 12px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: block;
 }
 
-.footer-col a{
-    color:#d1d5db;
-    text-decoration:none;
-    transition:.3s;
-    font-size:15px;
+.footer-col a {
+    color: #222222;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
 }
 
-.footer-col a:hover{
-    color:#ffffff;
-    padding-left:8px;
+.footer-col a:hover {
+    color: #d71920;
+    padding-left: 8px;
 }
 
-.footer-bottom{
-    margin-top:40px;
-    border-top:1px solid rgba(255,255,255,.15);
-    padding-top:20px;
-    text-align:center;
-    color:#bdbdbd;
-    font-size:14px;
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #dddddd;
+    padding-top: 20px;
+    text-align: center;
+    color: #222222;
+    font-size: 14px;
 }
 
-/* ==========================================
-   POPUP
-========================================== */
-
-.popup{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(82, 23, 221, 0.7);
-    z-index:9999;
-    animation:fadeIn .3s;
+.footer-bottom p {
+    color: #222222;
 }
 
-.popup-content{
-    width:90%;
-    max-width:700px;
-    background:#d3d6d3;
-    border-radius:12px;
-    margin:60px auto;
-    padding:30px;
-    position:relative;
-    animation:popup .3s;
-    max-height:80vh;
-    overflow-y:auto;
+/* =========================================================
+   BOOKING MODAL
+========================================================= */
+
+.booking-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
-.popup-content h2{
-    color:#dd171e;
-    margin-bottom:20px;
+.booking-content {
+    background: #ffffff;
+    width: 450px;
+    padding: 25px;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
 }
 
-.popup-content h3{
-    color:#111827;
-    margin-bottom:15px;
+.booking-content img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.popup-content p{
-    color:#444;
-    line-height:1.8;
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-#closePopup{
-    position:absolute;
-    right:20px;
-    top:15px;
-    font-size:32px;
-    cursor:pointer;
-    color:#d71920;
-    transition:.3s;
+.confirm-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #d71920;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-#closePopup:hover{
-    transform:rotate(90deg);
-    color:#000;
+.confirm-btn:hover {
+    background: #b8141b;
 }
 
-/* ==========================================
-   SCROLLBAR
-========================================== */
+/* =========================================================
+   SUBSCRIBE MODAL
+========================================================= */
 
-.popup-content::-webkit-scrollbar{
-    width:8px;
+.subscribe-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
 }
 
-.popup-content::-webkit-scrollbar-thumb{
-    background:#c43035;
-    border-radius:20px;
+.subscribe-content {
+    background: #ffffff;
+    width: 650px;
+    max-width: 95%;
+    padding: 30px;
+    border-radius: 12px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
 }
 
-/* ==========================================
-   ANIMATIONS
-========================================== */
-
-@keyframes popup{
-    from{
-        transform:translateY(-40px);
-        opacity:0;
-    }
-
-    to{
-        transform:translateY(0);
-        opacity:1;
-    }
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-}
-
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media(max-width:768px){
-
-.footer-grid{
-    grid-template-columns:1fr;
-    text-align:center;
-}
-
-.footer-col a:hover{
-    padding-left:0;
-}
-
-.popup-content{
-    width:95%;
-    margin:30px auto;
-    padding:20px;
-}
-
-}
-/* --- Responsive Adaptations --- */
-@media (max-width: 968px) {
-    .plan-matrix { grid-template-columns: 1fr; }
-    .offers-section { flex-direction: column; padding: 40px; }
-    .crew-frame { display: none; }
-    .footer-grid { grid-template-columns: repeat(2, 1fr); }
-    .widget-row { flex-direction: column; }
-}
-.card-buttons{
-    display:flex;
-    gap:10px;
-    margin-top:15px;
-}
-
-.book-btn,
-.view-btn{
-    flex:1;
-    padding:10px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.book-btn{
-    background:#c8102e;
-    color:rgb(121, 93, 93);
-}
-
-.view-btn{
-    background:#0b3d91;
-    color:white;
-}
-
-.book-btn:hover{
-    background:#a50d26;
-}
-
-.view-btn:hover{
-    background:#082f6d;
-}
-.booking-modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.6);
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-.booking-content{
-    background:#fff;
-    width:450px;
-    padding:25px;
-    border-radius:12px;
-    position:relative;
-    text-align:center;
-}
-
-.booking-content img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:20px;
-}
-
-.close-btn{
-    position:absolute;
-    top:10px;
-    right:18px;
-    font-size:30px;
-    cursor:pointer;
-}
-
-.confirm-btn{
-    width:100%;
-    padding:14px;
-    margin-top:20px;
-    background:#d71920;
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-.confirm-btn:hover{
-    background:#b8141b;
-}
-.subscribe-modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.7);
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
-}
-
-.subscribe-content{
-    background:#fff;
-    width:650px;
-    max-width:95%;
-    padding:30px;
-    border-radius:12px;
-    max-height:90vh;
-    overflow-y:auto;
-    position:relative;
-}
-
-.close-subscribe{
-    position:absolute;
-    top:15px;
-    right:20px;
-    font-size:30px;
-    cursor:pointer;
+.close-subscribe {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .subscribe-content input,
-.subscribe-content select{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:8px;
+.subscribe-content select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
-.save-btn{
-    width:100%;
-    padding:14px;
-    background:#d71920;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+.save-btn {
+    width: 100%;
+    padding: 14px;
+    background: #d71920;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.subscribe-check{
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-    margin:15px 0;
+.subscribe-check {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 15px 0;
+}
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    animation: fadeIn 0.3s;
+}
+
+.popup-content {
+    width: 90%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 60px auto;
+    padding: 30px;
+    position: relative;
+    animation: popup 0.3s;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.popup-content h2 {
+    color: #dd171e;
+    margin-bottom: 20px;
+}
+
+.popup-content h3 {
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    color: #444444;
+    line-height: 1.8;
+}
+
+#closePopup {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #d71920;
+    transition: 0.3s;
+}
+
+#closePopup:hover {
+    transform: rotate(90deg);
+    color: #000000;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.popup-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background: #c43035;
+    border-radius: 20px;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes popup {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 968px) {
+
+    .plan-matrix {
+        grid-template-columns: 1fr;
+    }
+
+    .offers-section {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .crew-frame {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .widget-row {
+        flex-direction: column;
+    }
+
+    .requirements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col a:hover {
+        padding-left: 0;
+    }
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-content {
+        width: 95%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .booking-content {
+        width: 90%;
+    }
+
+    .sub-input-row {
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,217 @@
+/* css */
+/* =========================
+   Travel Hero
+========================= */
+
+.travel-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("/images/nairobi.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.travel-hero-content {
+    max-width: 800px;
+}
+
+.travel-hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.travel-hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Requirements
+========================= */
+
+.requirements {
+    padding: 70px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.requirements h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.requirement-card {
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease;
+}
+
+.requirement-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   Requirement Images
+========================= */
+
+.requirement-image {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Icons
+========================= */
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.requirement-card h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.requirement-card p {
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =========================
+   Notice
+========================= */
+
+.travel-notice {
+    padding: 50px 10%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.travel-notice h2 {
+    margin-bottom: 15px;
+}
+
+.travel-notice p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Footer
+   YELLOW BACKGROUND
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+
+    background: #ffd700;
+
+    color: #222222;
+
+    border-top: 5px solid #e31937;
+}
+
+footer a {
+    color: #222222;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e31937;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1000px) {
+
+    .requirements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .requirements {
+        padding: 50px 5%;
+    }
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .travel-hero {
+        min-height: 45vh;
+        padding: 60px 20px;
+    }
+
+    .travel-hero h1 {
+        font-size: 38px;
+    }
+
+    .travel-hero p {
+        font-size: 17px;
+    }
+
+    .requirement-image {
+        height: 200px;
+    }
+
+}
+
