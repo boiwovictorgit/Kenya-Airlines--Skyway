@@ -1,0 +1,403 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Traveller Form | Kenya Airways</title>
+
+    <link rel="stylesheet"
+          href="travel-form.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         LANDING PAGE
+    ========================== -->
+
+    <section class="travel-form-hero">
+
+        <div class="travel-form-hero-content">
+
+            <h1>
+                Prepare for Your Journey
+            </h1>
+
+            <p>
+                Complete your passenger travel information
+                before you start your journey with Kenya Airways.
+            </p>
+
+            <a
+                href="#passenger-form"
+                class="start-form-btn"
+            >
+                Start Travel Form
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+
+    <section class="form-introduction">
+
+        <h2>
+            Passenger Travel Information
+        </h2>
+
+        <p>
+            To make your journey smooth and convenient,
+            please provide the required travel information
+            before travelling.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FORM
+    ========================== -->
+
+    <section
+        id="passenger-form"
+        class="passenger-form-section"
+    >
+
+        <div class="form-container">
+
+            <h2>
+                Traveller Information
+            </h2>
+
+            <p>
+                Please fill in the information below.
+            </p>
+
+
+            <form id="travelForm">
+
+
+                <!-- Passenger Information -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Passenger Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                placeholder="Enter first name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                placeholder="Enter last name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dateOfBirth">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dateOfBirth"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="nationality">
+                                Nationality
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nationality"
+                                placeholder="e.g. Kenyan"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Travel Information -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Travel Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="departure">
+                                Departure
+                            </label>
+
+                            <input
+                                type="text"
+                                id="departure"
+                                placeholder="e.g. Nairobi"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="destination">
+                                Destination
+                            </label>
+
+                            <input
+                                type="text"
+                                id="destination"
+                                placeholder="e.g. London"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="travelDate">
+                                Travel Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="travelDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="travelClass">
+                                Travel Class
+                            </label>
+
+                            <select
+                                id="travelClass"
+                                required
+                            >
+
+                                <option value="">
+                                    Select class
+                                </option>
+
+                                <option value="Economy">
+                                    Economy
+                                </option>
+
+                                <option value="Business">
+                                    Business
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Passport -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Passport Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="passportNumber">
+                                Passport Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="passportNumber"
+                                placeholder="Enter passport number"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="passportExpiry">
+                                Passport Expiry Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="passportExpiry"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Emergency Contact -->
+
+                <div class="form-section">
+
+                    <h3>
+                        Emergency Contact
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="emergencyName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="emergencyName"
+                                placeholder="Emergency contact"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="emergencyPhone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="emergencyPhone"
+                                placeholder="+254 700 000 000"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Declaration -->
+
+                <div class="declaration">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            required
+                        >
+
+                        I confirm that the information
+                        provided is correct.
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit Travel Information
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Kenya Airways — The Pride of Africa
+        </p>
+
+    </footer>
+
+
+    <script src="travel-form.js"></script>
+
+</body>
+
+</html>
+```
