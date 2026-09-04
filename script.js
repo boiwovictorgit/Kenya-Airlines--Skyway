@@ -1,3 +1,4 @@
+import flightsData from "./src/data/flights.js";
 const API_URL = "https://kenya-airlines-skyway.onrender.com";
 
 let flights = [];
@@ -19,8 +20,7 @@ async function initApp() {
 
         flightsContainer.innerHTML = "<h3>✈ Loading flights...</h3>";
 
-        const flightsRes = await fetch(`${API_URL}/flights`);
-        flights = await flightsRes.json();
+      flights = flightsData;
 
         const bookingsRes = await fetch(`${API_URL}/bookings`);
         bookings = await bookingsRes.json();
